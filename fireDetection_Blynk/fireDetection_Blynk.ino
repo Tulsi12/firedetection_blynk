@@ -36,7 +36,7 @@ void notifiaction() {
       digitalWrite(LED1, LOW);
       digitalWrite(Buzzer, LOW);
     } else if (sensor == 0) {
-      Blynk.logEvent("WARNING! A fire was detected");
+      Blynk.logEvent("flame","WARNING! A fire was detected"); //flame is a code of event in blynk
       digitalWrite(LED2, LOW);
       digitalWrite(LED1, HIGH);
       digitalWrite(Buzzer, HIGH);
